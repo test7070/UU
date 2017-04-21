@@ -182,7 +182,7 @@
 				$('#txtXsdate').val(q_date());
 				$('#txtXyear').mask('999');
 				$('#txtXweek').mask('99');
-				$('#txtXweek').val(padL((new Date(q_date())).getWeekOfYear(), '0', 2));
+				$('#txtXweek').val(padL((new Date(new Date())).getWeekOfYear(), '0', 2));
 				$('#txtXyear').val(r_accy.substring(0, 3));
 				$('#txtXbmon1').val(r_accy + '/01').mask('999/99');
 				$('#txtXbmon2').val(r_accy + '/12').mask('999/99');
